@@ -10,8 +10,10 @@ const routes: Routes = [
   {path:'',redirectTo:'one' ,pathMatch:'full'},
   {path:'one',component:OneComponent},
   {path:'two',component:TwoComponent},
-  {path:'three',component:ThreeComponent},
-  {path:'four',component:FourComponent},
+  {path:'three',component:ThreeComponent,children:[
+    
+    {path:'four',component:FourComponent},
+  ]},
   {path:'five',component:FiveComponent},
 ];
 

@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-two',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class TwoComponent {
 
+  constructor(private http:HttpClient, private router:Router,private activeRoute:ActivatedRoute){}
+
+ 
 }
