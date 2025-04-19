@@ -10,6 +10,7 @@ import { FourComponent } from './four/four.component';
 import { FiveComponent } from './five/five.component';
 import { provideState, provideStore, StoreModule } from '@ngrx/store';
 import { reducer } from './store/counter.reducer';
+import { HttpClient, HttpClientModule, provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,12 @@ import { reducer } from './store/counter.reducer';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // StoreModule.forRoot({},{ })
+    StoreModule.forRoot({},{ }),
+    // HttpClientModule 
   ],
 
   providers: [
+    provideHttpClient(),
     provideStore(),
     provideState({name:'counter',reducer:reducer})
   ],
