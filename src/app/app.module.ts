@@ -23,7 +23,7 @@ import { reducer } from './store/counter.reducer';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({},{ })
+    // StoreModule.forRoot({},{ })
   ],
 
   providers: [
