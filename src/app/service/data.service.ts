@@ -11,4 +11,11 @@ export class DataService {
   getUser(){
     return this.http.get('https://jsonplaceholder.typicode.com/users')
   }
+  demoData:any
+  getDemoData(data:any){
+    this.demoData= data
+  }
+  sendDemodata(){
+    return this.demoData
+  }
 }

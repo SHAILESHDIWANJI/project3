@@ -16,4 +16,5 @@ export const selectLoading=createSelector(
 export const selectError=createSelector(
     selectDataState,
     (state:DataState)=>state.error
+    
 )

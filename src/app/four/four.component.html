@@ -1,1 +1,12 @@
 <p>this is project3 component four</p>
+<div class="container">
+    <div class="row">
+        <button (click)="increaseCount()" class="btn btn-primary">Increase</button>
+        <p class="btn">{{a()}}</p>
+        <p class="btn">{{doubleCoutn()}}</p>
+        <button (click)="decreaseCount()" class="btn btn-primary">decrese</button>
+
+    </div>
+</div>
+
+<input type="text" (keyup)="myInput(myInputs)" #myInputs>
